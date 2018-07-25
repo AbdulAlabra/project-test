@@ -147,8 +147,25 @@ function processURL(queryURL) {
                 ]
             });
 
-            chart.render();
+            var chart2 = new CanvasJS.Chart("chartContainer2",{
+                title :{
+                text: "Live Data"
+                },
+                data: [{
+                type: "pie",
+                dataPoints : [
+                    { label: 'Highest Price Date: ' + highest_price_info.date, y: stock_crypto_highest_price }, //this will be in what ever interval we get
 
+                            { label: "Current Price Date: " + stock_crypto_info['3. Last Refreshed'], y: Number(newArray[0]['2. high']) }
+                        ]
+                    }
+                ]
+                
+            });
+
+
+            chart.render();
+            chart2.render();
             //this save the price informations of the first date chosen. 
             var showInfo_date1 = newArray.find(function (obj) {
                 return obj.date === stock_chosen_date_1
