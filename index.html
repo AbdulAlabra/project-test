@@ -16,7 +16,23 @@
 <body>
     <div class="container">
         <h1>Stock Price</h1>
-        <div id="chartContainer" class="col-md-6" style="height: 300px; width: 100%;"></div>
+        <input type="text" name="search" class="stock-search form-control" id="formGroupExampleInput" placeholder="ex. AAPL">
+        
+        <input type="text" name="search" class="crypto-search form-control col-sm-6" id="formGroupExampleInput" placeholder="ex. BTC">
+        <input type="date" class="date1 form-control" id="formGroupExampleInput" placeholder="ex. 12:00:AM">
+        <br>
+        
+        <input type="date" class="date2 form-control" id="formGroupExampleInput" placeholder="ex. 12:00:AM">
+        <br>
+
+        <input type="number" class="investment form-control" id="formGroupExampleInput" placeholder="$$$">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <br>
+
+
+        <div id="chartContainer" class="col-md-12 chart1" style="height: 300px; width: 100%;"></div>
+        
+        
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,7 +41,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
+
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
     <script src="google-api.js"></script>
 </body>
 
